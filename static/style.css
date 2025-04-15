@@ -1,1 +1,127 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+
+.body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 3fr 12fr 1fr;
+  padding: 40px;
+  background-color: #F0F0F6;
+}
+.body aside {
+  background-color: #fff;
+  padding: 20px;
+  max-height: -moz-max-content;
+  max-height: max-content;
+}
+.body .border-shadow {
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #8b8b8b;
+}
+.body .container {
+  padding: 0 20px 0 20px;
+}
+.body .container .main {
+  display: grid;
+  grid-template-columns: 5fr 3fr;
+  background-color: #fff;
+  padding: 40px;
+  align-items: center;
+  position: relative;
+}
+.body .container .img img {
+  width: 100%;
+}
+.body .container .figure span {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border: 3px solid #FFB400;
+  top: 5%;
+  left: 5%;
+}
+.body .container .figure .g {
+  border-color: #05FF00;
+}
+.body .container .figure .b {
+  border-color: #0047FF;
+}
+.body .container .figure .r {
+  border-color: #FF2E00;
+}
+.body .container .figure span:nth-child(2) {
+  left: 60%;
+  top: 10%;
+  border-radius: 100%;
+}
+.body .container .figure span:nth-child(3) {
+  top: inherit;
+  left: 30%;
+  bottom: 25%;
+  transform: rotate(40deg);
+}
+.body .container .figure span:nth-child(4) {
+  top: inherit;
+  left: 10%;
+  bottom: 10%;
+  border-radius: 100%;
+}
+.body .container .figure span:nth-child(5) {
+  top: inherit;
+  left: 50%;
+  bottom: 15%;
+  border-radius: 100%;
+}
+.body .container .figure span:nth-child(6) {
+  top: 75px;
+  left: 90%;
+  transform: rotate(40deg);
+}
+.body .container .figure span:nth-child(7) {
+  top: inherit;
+  left: 95%;
+  bottom: 10%;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  border: none;
+  background-color: #FF2E00;
+}
+.body .container .portfolio .items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+.body .container .portfolio .items .item {
+  padding: 10px;
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+.body .container .portfolio .items .item .img, .body .container .portfolio .items .item img {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.body .container .portfolio .items .item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.body .container .portfolio .items .item .hover {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 12;
+  width: 100%;
+  height: 100%;
+  background-color: #FFB80D;
+  opacity: 0.8;
+  justify-content: center;
+  align-items: center;
+}
+.body .container .portfolio .items .item:hover .hover {
+  top: 0;
+}/*# sourceMappingURL=style.css.map */
